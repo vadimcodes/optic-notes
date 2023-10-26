@@ -1,0 +1,27 @@
+.switch {
+  padding: 0 12px 20px 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--gray-ec);
+  &__btn {
+    padding: 5px 18px;
+    border-radius: 4px;
+
+    &--active {
+      background-color: var(--light-color);
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    background-color: var(--gray-e0);
+    padding: 2px;
+    border-radius: 6px;
+  }
+
+  &__light {
+  }
+
+  &__dark {
+  }
+}

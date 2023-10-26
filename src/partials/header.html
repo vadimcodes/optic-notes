@@ -1,3 +1,74 @@
-<header class="header">
-  <div class="container"></div>
-</header>
+<div class="header">
+  <div class="header__head">
+    <button
+      class="burger"
+      aria-label="Открыть меню"
+      aria-expanded="false"
+      data-burger
+    >
+      <span class="burger__line"></span>
+    </button>
+    <div class="header__control">
+      <button class="header__menu btn-reset">
+        <svg class="header__menu-icon icon">
+          <use xlink:href="img/sprite.svg#more"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="settings">
+      <small class="settings__descr">Theme</small>
+      <div class="switch">
+        <div class="switch__content">
+          <button
+            class="switch__btn switch__btn--active switch__light btn-reset span-icon"
+          >
+            <svg class="switch__icon icon">
+              <use xlink:href="img/sprite.svg#sun"></use>
+            </svg>
+            <span>Light</span>
+          </button>
+          <button class="switch__btn switch__dark btn-reset span-icon">
+            <svg class="switch__icon icon">
+              <use xlink:href="img/sprite.svg#moon"></use>
+            </svg>
+            <span>Dark</span>
+          </button>
+        </div>
+      </div>
+      <ul class="settings__list list-reset">
+        <li class="settings__items span-icon">
+          <svg class="settings__icon icon">
+            <use xlink:href="img/sprite.svg#settings"></use>
+          </svg>
+          <span>Settings</span>
+        </li>
+        <li class="settings__items span-icon">
+          <svg class="settings__icon icon">
+            <use xlink:href="img/sprite.svg#info"></use>
+          </svg>
+          <span>About Us</span>
+        </li>
+        <li class="settings__items span-icon">
+          <svg class="settings__icon icon">
+            <use xlink:href="img/sprite.svg#chat"></use>
+          </svg>
+          <span>Support</span>
+        </li>
+      </ul>
+      <small class="settings__copyright"
+        >© 2023 ToDo ·
+        <a class="settings__my-link" href="#">vadimcodes</a></small
+      >
+    </div>
+  </div>
+  <div class="hi">
+    <h2 class="hi__main">
+      Good evening <span class="hi__main-name">John</span>,
+    </h2>
+    <p class="hi__descr">
+      <span class="hi__day">It's Thursday,</span>
+      <span class="hi__date">Oct 26 - </span>
+      <span class="hi__counter">75 tasks</span>
+    </p>
+  </div>
+</div>

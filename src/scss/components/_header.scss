@@ -1,0 +1,43 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 30px;
+  right: 0;
+  margin-bottom: 40px;
+  padding: 15px;
+
+  &__head {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  &__control {
+    margin-left: auto;
+  }
+
+  &__menu {
+    background-color: var(--gray-e0);
+    border-radius: 8px;
+    width: var(--header-head-width);
+    height: var(--header-head-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.burger {
+  @include burger;
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}
