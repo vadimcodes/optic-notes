@@ -10,6 +10,20 @@
   bottom: var(--side-offset);
   width: var(--side-width);
   background-color: var(--light-color);
+  transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+
+  @include tablet {
+    transform: translateX(-110%) scale(0.97);
+  }
+
+  @include mobile {
+    width: 70%;
+    padding: 50px 20px;
+  }
+
+  &--active {
+    transform: translateX(0) scale(1);
+  }
 
   &__list {
     margin-bottom: 20px;
@@ -43,10 +57,10 @@
 
   &__counter {
     margin-left: auto;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
     background-color: var(--gray-e0);
-    padding: 0 5px;
+    padding: 0 7px;
     border-radius: 4px;
     color: var(--gray-9e);
   }

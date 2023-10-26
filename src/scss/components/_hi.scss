@@ -1,0 +1,27 @@
+.hi {
+  margin-bottom: 40px;
+
+  &__main {
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 12px;
+
+    &-name {
+    }
+  }
+
+  &__descr {
+    font-size: 20px;
+    margin: 0;
+    color: var(--gray-9e);
+  }
+
+  &__day {
+  }
+
+  &__date {
+  }
+
+  &__counter {
+  }
+}

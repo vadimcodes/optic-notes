@@ -1,0 +1,8 @@
+.content {
+  padding-left: calc(var(--side-offset) + var(--side-width));
+  backdrop-filter: var(--blur);
+
+  @include tablet {
+    padding-left: 0;
+  }
+}
