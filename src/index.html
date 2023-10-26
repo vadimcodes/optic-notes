@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html')
+
+  <body class="page__body">
+    <div class="site-container">
+      <main class="main">
+        <div class="container">
+          <div class="side" data-side>
+            <ul class="side__list">
+              <li class="side__item"><a href="#">тут ссылка</a></li>
+            </ul>
+          </div>
+          <div class="content">
+            <!-- <button
+              class="burger"
+              aria-label="Открыть меню"
+              aria-expanded="false"
+              data-burger
+            >
+              <span class="burger__line"></span>
+            </button> -->
+            <div class="header">
+              <div class="menu">
+                <button
+                  class="burger"
+                  aria-label="Открыть меню"
+                  aria-expanded="false"
+                  data-burger
+                >
+                  <span class="burger__line"></span>
+                </button>
+                <div class="menu__control">
+                  <button class="menu__settings">settings</button>
+                </div>
+              </div>
+              <div class="title">
+                <div class="">наименование</div>
+              </div>
+            </div>
+            <div class="task">task task task task</div>
+          </div>
+        </div>
+      </main>
+      <div class="overlay" data-overlay></div>
+    </div>
+  </body>
+</html>
