@@ -6,20 +6,24 @@
     <div class="site-container">
       <main class="main">
         <div class="container">
+          @include('partials/side.html')
+          <div class="content">
+            @include('partials/header.html') @include('partials/task.html')
+          </div>
+        </div>
+      </main>
+      <div class="overlay" data-overlay></div>
+    </div>
+  </body>
+</html>
+
+<!-- <div class="container">
           <div class="side" data-side>
             <ul class="side__list">
               <li class="side__item"><a href="#">тут ссылка</a></li>
             </ul>
           </div>
           <div class="content">
-            <!-- <button
-              class="burger"
-              aria-label="Открыть меню"
-              aria-expanded="false"
-              data-burger
-            >
-              <span class="burger__line"></span>
-            </button> -->
             <div class="header">
               <div class="menu">
                 <button
@@ -40,9 +44,4 @@
             </div>
             <div class="task">task task task task</div>
           </div>
-        </div>
-      </main>
-      <div class="overlay" data-overlay></div>
-    </div>
-  </body>
-</html>
+        </div> -->

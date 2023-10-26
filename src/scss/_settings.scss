@@ -119,117 +119,112 @@ a {
   gap: 20px;
 }
 
-:root {
-  --side-width: 320px;
-  --side-offset: 8px;
-}
-
 .container {
   margin: 0 auto;
   max-width: var(--container-width);
   min-height: 100vh;
   position: relative;
-  background-color: khaki;
+  background: linear-gradient(180deg, #dff0fd 0%, #eceeee 51.07%);
 }
 
-.side {
-  display: block;
-  z-index: 10;
-  overflow-y: scroll;
-  position: fixed;
-  top: var(--side-offset);
-  left: var(--side-offset);
-  bottom: var(--side-offset);
-  width: var(--side-width);
-  background-color: antiquewhite;
-  transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+// .side {
+//   display: block;
+//   z-index: 10;
+//   overflow-y: scroll;
+//   position: fixed;
+//   top: var(--side-offset);
+//   left: var(--side-offset);
+//   bottom: var(--side-offset);
+//   width: var(--side-width);
+//   background-color: antiquewhite;
+//   transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
 
-  @include tablet {
-    transform: translateX(-110%);
-  }
-}
+//   @include tablet {
+//     transform: translateX(-110%);
+//   }
+// }
 
-.side--active {
-  transform: translateX(0);
-  width: 70%;
-}
+// .side--active {
+//   transform: translateX(0);
+//   width: 70%;
+// }
 
-.side__item {
-  height: 1000px;
-}
+// .side__item {
+//   height: 1000px;
+// }
 
-.content {
-  padding-left: calc(var(--side-offset) + var(--side-width));
+// .content {
+//   padding-left: calc(var(--side-offset) + var(--side-width));
 
-  @include tablet {
-    padding-left: 0;
-  }
-}
+//   @include tablet {
+//     padding-left: 0;
+//   }
+// }
 
-.header {
-  background: rgba(217, 83, 21, 0.3);
-  backdrop-filter: blur(25px);
-  position: sticky;
-  top: 0;
-  left: 30px;
-  right: 0;
-  margin-bottom: 30px;
-}
+// .header {
+//   background: rgba(217, 83, 21, 0.3);
+//   backdrop-filter: blur(25px);
+//   position: sticky;
+//   top: 0;
+//   left: 30px;
+//   right: 0;
+//   margin-bottom: 30px;
+// }
 
-.menu {
-  padding: 10px 15px;
-  display: flex;
-  align-items: center;
-}
+// .menu {
+//   padding: 10px 15px;
+//   display: flex;
+//   align-items: center;
+// }
 
-.menu__control {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
+// .menu__control {
+//   display: flex;
+//   align-items: center;
+//   margin-left: auto;
+// }
 
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-}
+// .title {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   padding: 10px;
+// }
 
-.task {
-  background-color: darkslategrey;
-  min-height: 1200px;
-  width: 620px;
-  margin: 0 auto;
+// .task {
+//   background-color: darkslategrey;
+//   min-height: 1200px;
+//   width: 620px;
+//   margin: 0 auto;
 
-  @include tablet {
-    width: 100%;
-    padding: 0 30px;
-    margin: 0;
-  }
-}
+//   @include tablet {
+//     width: 100%;
+//     padding: 0 30px;
+//     margin: 0;
+//   }
+// }
 
-.overlay {
-  position: fixed;
-  inset: 0;
-  opacity: 0;
-  visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(1px);
-}
+// .overlay {
+//   position: fixed;
+//   inset: 0;
+//   opacity: 0;
+//   visibility: hidden;
+//   background-color: rgba(0, 0, 0, 0.2);
+//   backdrop-filter: blur(1px);
+// }
 
-.overlay--active {
-  opacity: 1;
-  visibility: visible;
-}
+// .overlay--active {
+//   opacity: 1;
+//   visibility: visible;
+// }
 
-.burger {
-  @include burger;
-  display: none;
+// .burger {
+//   @include burger;
+//   display: none;
 
-  @include tablet {
-    display: block;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-  }
-}
+//   @include tablet {
+//     display: block;
+//     position: absolute;
+//     top: 15px;
+//     left: 15px;
+//   }
+// }
